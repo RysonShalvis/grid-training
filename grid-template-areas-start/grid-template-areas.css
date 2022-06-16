@@ -1,0 +1,12 @@
+.grid-parent {
+    
+  }
+
+.grid-child {
+    box-sizing: border-box;
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    padding: 140px 0;
+    border-radius: 10px;
+  }

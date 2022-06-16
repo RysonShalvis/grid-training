@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(102, 102, 102);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-parent {
+    display: grid;
+    gap: 10px;
+    
+  }
+  
+  @media all and (min-width: 1200px) {
+    
+    .grid-parent {
+      grid-template-columns: repeat(7, 1fr);
+    }
+    
+    .span-two {
+      grid-column: span 2;
+    }
+    
+    .span-three {
+      grid-column: span 3;
+    }
+
+    .row-span {
+        grid-row: span 2;
+    }
+
+    .span-five {
+        grid-column: span 5;
+    }
+
+    .span-seven {
+        grid-column: span 7;
+    }
+  }
+  
+  .grid-child {
+    box-sizing: border-box;
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    padding: 140px 0;
+    border-radius: 10px;
+  }

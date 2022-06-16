@@ -1,0 +1,66 @@
+.grid-parent {
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    'one'
+    'two'
+    'three'
+    'four'
+    'five'
+    'six'
+    'seven'
+    'eight';
+  }
+
+@media all and (min-width: 1000px) {
+
+.grid-parent {
+
+    grid-template-areas: 
+    'one one two three three four four'
+    'five five five six six seven seven'
+    'eight eight eight eight eight seven seven';
+    }
+}
+
+.grid-child:nth-child(1) {
+  grid-area: one;
+}
+
+.grid-child:nth-child(2) {
+  grid-area: two;
+}
+
+.grid-child:nth-child(3) {
+  grid-area: three;
+}
+
+.grid-child:nth-child(4) {
+  grid-area: four;
+}
+
+.grid-child:nth-child(5) {
+  grid-area: five;
+}
+
+.grid-child:nth-child(6) {
+  grid-area: six;
+}
+
+.grid-child:nth-child(7) {
+  grid-area: seven;
+}
+
+.grid-child:nth-child(8) {
+  grid-area: eight;
+}
+
+
+.grid-child {
+    box-sizing: border-box;
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    padding: 140px 0;
+    border-radius: 10px;
+  }
